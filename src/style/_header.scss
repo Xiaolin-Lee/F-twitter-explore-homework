@@ -1,0 +1,16 @@
+header {
+  @include heading($font-size-base);
+  height: 90px;
+  border-bottom: 1px solid $gray;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action {
+  .btn {
+    width: 95px;
+  }
+}

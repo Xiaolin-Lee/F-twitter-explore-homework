@@ -44,3 +44,11 @@ h1 {
   color: $heading-color;
   margin: 0;
 }
+
+.btn-primary {
+  @include button-variable($white, $primary-color);
+}
+
+.btn-default {
+  @include button-variable($primary-color, $body-bg);
+}

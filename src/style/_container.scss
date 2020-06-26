@@ -1,0 +1,43 @@
+.container {
+  width: 600px;
+  height: 460px;
+  border: 1px solid $link-color;
+  border-radius: $border-radius-base;
+  margin: 120px auto;
+  padding: $padding;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input {
+  background: $body-bg;
+  border: none;
+  border-bottom: 1px solid $gray;
+  caret-color: $white;
+}
+.title {
+  color: $white;
+  align-self: center;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: darken($primary-color, 15%);
+  }
+}
+
+input {
+  @extend .input;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.or {
+  align-self: center;
+}
